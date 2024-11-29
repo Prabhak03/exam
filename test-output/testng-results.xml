@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-28T22:02:37 IST" name="Suite" finished-at="2024-11-28T22:03:28 IST" duration-ms="50526">
+    <groups>
+    </groups>
+    <test started-at="2024-11-28T22:02:37 IST" name="Test" finished-at="2024-11-28T22:03:28 IST" duration-ms="50526">
+      <class name="org.Testcase.LoginTestcase">
+        <test-method is-config="true" signature="startup()[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:02:37 IST" name="startup" finished-at="2024-11-28T22:02:43 IST" duration-ms="5362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="invalidUsername(java.lang.String,java.lang.String)[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:02:43 IST" name="invalidUsername" data-provider="login" finished-at="2024-11-28T22:02:45 IST" duration-ms="1873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:02:45 IST" name="startup" finished-at="2024-11-28T22:02:49 IST" duration-ms="4190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="invalidUsername(java.lang.String,java.lang.String)[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:02:49 IST" name="invalidUsername" data-provider="login" finished-at="2024-11-28T22:02:50 IST" duration-ms="1527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:02:50 IST" name="startup" finished-at="2024-11-28T22:02:54 IST" duration-ms="3844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="invalidUsername(java.lang.String,java.lang.String)[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:02:54 IST" name="invalidUsername" data-provider="login" finished-at="2024-11-28T22:02:56 IST" duration-ms="1493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:02:56 IST" name="startup" finished-at="2024-11-28T22:03:00 IST" duration-ms="4117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="invalidUsername(java.lang.String,java.lang.String)[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:03:00 IST" name="invalidUsername" data-provider="login" finished-at="2024-11-28T22:03:01 IST" duration-ms="700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:03:01 IST" name="startup" finished-at="2024-11-28T22:03:07 IST" duration-ms="5968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="invalidUsername(java.lang.String,java.lang.String)[pri:0, instance:org.Testcase.LoginTestcase@2e377400]" started-at="2024-11-28T22:03:07 IST" name="invalidUsername" data-provider="login" finished-at="2024-11-28T22:03:07 IST" duration-ms="631" status="FAIL">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+at org.orange.pages.loginpage.userName(loginpage.java:15)
+at org.Testcase.LoginTestcase.invalidUsername(LoginTestcase.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+      </class> <!-- org.Testcase.LoginTestcase -->
+      <class name="org.Testcase.Requirement">
+        <test-method signature="req()[pri:0, instance:org.Testcase.Requirement@32910148]" started-at="2024-11-28T22:03:07 IST" name="req" finished-at="2024-11-28T22:03:28 IST" duration-ms="20709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- req -->
+      </class> <!-- org.Testcase.Requirement -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
